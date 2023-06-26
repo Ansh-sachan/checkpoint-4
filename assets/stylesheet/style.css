@@ -1,0 +1,217 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+	font-size: 16px;
+}
+/* general  */
+
+.btn-hover:hover{
+	background-color: var(--primary);
+}
+
+.container{
+	max-width: 1220px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
+a{
+	text-decoration: none;
+}
+/* flex  */
+
+.flex{
+	display: flex;
+}
+.space-between{
+	justify-content: space-between;
+}
+.items-center{
+	justify-items: center;
+	align-items: center;
+}
+.wrap{
+	flex-wrap: wrap;
+}
+.center{
+	text-align: center;
+}
+.row{
+	flex-direction: row;
+}
+.column{
+	flex-direction: column;
+}
+
+/* flex-basis  */
+.flex-10{
+	flex: 0 1 10%;
+}
+.flex-20{
+	flex: 0 1 20%;
+}
+.flex-30{
+	flex: 0 1 30%;
+}
+.flex-48{
+	flex: 0 1 48%;
+}
+.flex-60{
+	flex: 0 1 60%;
+}
+.flex-70{
+	flex: 0 1 70%;
+}
+/* color  */
+:root{
+--primary: #ea5433;
+--section-bg: #fef9f7;
+--text-dark: #312b2a;
+--text-light: #635551;
+--pricing-bg: #f8f8f8;
+--bg-color: rgba(83, 71, 68, 0.8);
+}
+
+/* header  */
+.navbar{
+	padding: 1rem;
+}
+.brand{
+	color: var(--text-light);
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-decoration: none;
+}
+.nav-btn{
+	color: var(--text-light);
+	text-decoration: none;
+	margin-left:1.5rem;
+	text-transform: capitalize
+}
+.active{
+	color: var(--primary);
+	text-transform: capitalize;
+}
+.nav-btn:hover{
+	color: var(--primary);
+}
+.option{
+	display: none;
+}
+.drop-down~.option:hover{
+	display: block;
+}
+
+/* bg-img  */
+.bg-img{
+	background:linear-gradient(rgba(75, 74, 74,0.6),rgba(75, 74, 74,0.6)) ,url(/assets/media/hero-bg.jpg) no-repeat center center/cover;
+	height: 70vh;
+}
+.head-1{
+	font-size: 3rem;
+	text-transform: capitalize;
+	color: white;
+	font-weight: 900;
+	padding-top: 8rem ;
+}
+.head-3{
+	font-size: 1.5rem;
+	color: white;
+	font-weight: 500;
+	padding-top: 1rem ;
+	padding-bottom: 2.5rem ;
+}
+.arrow-btn{
+    background-color: var(--primary);
+    padding: 1rem;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    z-index: 99;
+    position: relative;
+    right: 12.4rem
+}
+.btn{
+	background-color: var(--bg-color);
+    padding: 0.8rem 2.5rem;
+    border-radius: 3rem;
+    padding-left: 2.5rem;
+    position: relative;
+    width: 7rem;
+    text-align: center;
+    color: white;
+}
+
+/* hero section */
+
+.container-box{
+	position: relative;
+	bottom:7rem;
+}
+
+.card-1{
+	background-color: var(--primary);
+	color: white;
+	padding: 2rem;
+	/* height: 17rem; */
+}
+.hero-head-1{
+	font-size: 2.2rem;
+	text-transform: capitalize;
+	font-weight: 900;
+}
+.hero-para{
+	padding-top: 1rem;
+}
+.btn-secondary{
+	background-color: #f58c74;
+}
