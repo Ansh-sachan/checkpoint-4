@@ -56,6 +56,7 @@ html{
 
 .btn-hover:hover{
 	background-color: var(--primary);
+	transition: 0.7s;
 }
 
 .container{
@@ -97,8 +98,14 @@ a{
 .flex-10{
 	flex: 0 1 10%;
 }
+.flex-15{
+	flex: 0 1 15%;
+}
 .flex-20{
 	flex: 0 1 20%;
+}
+.flex-25{
+	flex: 0 1 25%;
 }
 .flex-30{
 	flex: 0 1 30%;
@@ -123,8 +130,15 @@ a{
 }
 
 /* header  */
-.navbar{
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	background-color: white;
 	padding: 1rem;
+	margin: 0 auto;
+	width: 100%;
 }
 .brand{
 	color: var(--text-light);
@@ -144,18 +158,65 @@ a{
 }
 .nav-btn:hover{
 	color: var(--primary);
+	transition: 0.4s;
+}
+.drop-down{
+	position: relative;
+	width: 8rem;
+}
+.drop-down-2{
+	position: relative;
+	width: 8rem;
 }
 .option{
 	display: none;
+	background-color: white;
+	position:absolute;
+	top:1.5rem;
+	right: 0rem;
+	padding: 1rem;
+	border-radius: 1rem;
+	width:9rem;
+	height: auto;
 }
-.drop-down~.option:hover{
+.option-2{
+	display: none;
+	background-color: white;
+	position:absolute;
+	left: 8rem;
+	top: 0rem;
+	border-radius: 1rem;
+	width: 15rem;
+	width: 100%;
+	padding: 1rem 0;
+	height: auto;
+}
+.option li a{
+	color: var(--text-light);
+	padding-left: 1rem;
+}
+.drop-down:hover .option{
+	display: block;
+}
+.option li a:hover{
+	color:var(--primary);
+	transition: 0.4s;
+}
+.drop-down-2:hover .option-2{
 	display: block;
 }
 
 /* bg-img  */
 .bg-img{
 	background:linear-gradient(rgba(75, 74, 74,0.6),rgba(75, 74, 74,0.6)) ,url(/assets/media/hero-bg.jpg) no-repeat center center/cover;
-	height: 70vh;
+	height: 80vh;
+	width: 100%;
+	position: fixed;
+}
+
+/* section  */
+.relative{
+	position: relative;
 }
 .head-1{
 	font-size: 3rem;
@@ -173,36 +234,43 @@ a{
 }
 .arrow-btn{
     background-color: var(--primary);
-    padding: 1rem;
+    padding: 1.4rem;
     font-size: 1.4rem;
     border-radius: 50%;
     z-index: 99;
-    position: relative;
-    right: 12.4rem
+    position: absolute;
+    left: 0;
+	top: -0.4rem;
 }
 .btn{
 	background-color: var(--bg-color);
     padding: 0.8rem 2.5rem;
     border-radius: 3rem;
-    padding-left: 2.5rem;
+    padding-left: 3.9rem;
     position: relative;
     width: 7rem;
     text-align: center;
     color: white;
+	top: 0rem;
+	left: 0rem;
 }
 
 /* hero section */
+.hero-section{
+	background-color: white;
+	position: relative;
+	top: 14rem;
+}
 
 .container-box{
 	position: relative;
-	bottom:7rem;
+	bottom:9rem;
 }
 
 .card-1{
 	background-color: var(--primary);
 	color: white;
 	padding: 2rem;
-	/* height: 17rem; */
 }
 .hero-head-1{
 	font-size: 2.2rem;
@@ -214,4 +282,44 @@ a{
 }
 .btn-secondary{
 	background-color: #f58c74;
+	padding: 0.6rem 1.5rem;
+	border-radius: 2rem;
+	text-transform: capitalize;
+	width: 30%;
+	margin: 0 auto;
+	margin-top: 2rem;
+	padding-left: 2rem;
+}
+.btn-secondary i{
+	font-size:0.6rem;
+	margin-left: 0.6rem;
+}
+.btn-secondary:hover{
+	background-color: white;
+	color: var(--primary);
+	transition: 0.4s;
+}
+
+/* card-2 */
+.card-2{
+	background-color: white;
+	border-radius: 1rem;
+	padding: 2rem;
+	text-align: center;
+	height: 17rem;
+}
+.card-icon i{
+	color: var(--primary);
+	font-size: 1.5rem;
+	padding: 1.5rem;
+}
+.card-head{
+	font-weight: 900;
+	font-size: 1.3rem;
+	padding-bottom: 1.5rem;
+	color: var(--text-dark);
+}
+.card-para{
+	color: var(--text-light);
+	font-size: 0.8rem;
 }

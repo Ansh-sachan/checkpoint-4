@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <header class="navbar">
-        <div class="container flex items-center space-between">
+    <header class="header">
+        <div class="container flex items-center space-between navbar">
             <nav>
                 <a class="brand" href="index.html">Flexor</a>
             </nav>
@@ -30,13 +30,23 @@
                     <li class="nav-btn">
                         <div class="drop-down">
                             <a href="#" class="nav-btn">Drop Down <i class="fa-solid fa-chevron-down fa-bounce"></i></a>
-                        </div>
-                        <div class="option  flex column">
-                            <a href="#">drop down 1</a>
-                            <a href="#">drop down 2</a>
-                            <a href="#">drop down 3</a>
-                            <a href="#">drop down 4</a>
-                            <a href="#">drop down 5</a>
+                            <ul class="option">
+                                <li><a href="#">drop down 1</a></li>
+                                <li>
+                                    <div class="drop-down-2">
+                                        <a href="#">Drop Down 2 <i class="fa-solid fa-chevron-right"></i></a>
+                                        <ul class="option-2">
+                                            <li><a href="#">Drop Down</a></li>
+                                            <li><a href="#">Drop Down</a></li>
+                                            <li><a href="#">Drop Down</a></li>
+                                            <li><a href="#">Drop Down</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">drop down 3</a></li>
+                                <li><a href="#">drop down 4</a></li>
+                                <li><a href="#">drop down 5</a></li>
+                            </ul>   
                         </div>
                     </li>
                     <li><a href="#" class="nav-btn">contact</a></li>
@@ -46,26 +56,49 @@
     </header>
     <main>
         <section class="bg-img">
-            <div class="container">   
+        </section>
+        <section class="container">
+            <div class="relative">
                 <h1 class="head-1">welcome to flexor</h1>
                 <h3 class="head-3">We are team of talented designers making websites with Bootstraps</h3>
                 <div class="flex items-center">
-                    <div class="btn btn-hover">Get Started</div>
-                    <i class="fa-solid fa-arrow-right arrow-btn" style="color: #ffffff;"></i>
+                    <div class="btn btn-hover">Get Started  <i class="fa-solid fa-arrow-right arrow-btn" style="color: #ffffff;"></i></div>
                 </div>
             </div>
         </section>
         <section class="hero-section">
-            <div class="container flex space-between container-box">
-                <div class="card-1 flex-30">
-                    <h1 class="hero-head-1">
-                        why choose flexor for your company  websites
-                    </h1>
-                    <p class="hero-para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium sunt error rem perferendis neque minus, aliquid ab possimus voluptatibus tempore sed dolor, officiis ducimus, corporis porro ipsum eius doloremque in! Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
-                    <div class="btn-hover btn-secondary">learn-more</div>
+            <div class="container">
+                <div class="flex space-between container-box items-center">
+                    <div class="card-1 flex-30">
+                        <h1 class="hero-head-1">
+                            why choose flexor for your company websites
+                        </h1>
+                        <p class="hero-para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium sunt error
+                            rem perferendis neque minus, aliquid ab possimus voluptatibus tempore sed dolor, officiis
+                            ducimus, corporis porro ipsum eius doloremque in! Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit..</p>
+                        <div class="btn-secondary flex items-center">learn more <i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+                    <div class="card-2 flex-15">
+                        <div class="card-icon"><i class="fa-regular fa-newspaper"></i></div>
+                        <h2 class="card-head"><strong>Lorem, ipsum dolor.</strong></h2>
+                        <p class="card-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus.</p>
+                    </div>
+                    <div class="card-2 flex-15">
+                        <div class="card-icon"><i class="fa-solid fa-cube"></i></div>
+                        <h2 class="card-head"><strong>Lorem, ipsum dolor.</strong></h2>
+                        <p class="card-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus.</p>
+                    </div>
+                    <div class="card-2 flex-15">
+                        <div class="card-icon"><i class="fa-regular fa-image"></i></div>
+                        <h2 class="card-head"><strong>Lorem, ipsum dolor.</strong></h2>
+                        <p class="card-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus.</p>
+                    </div>
+
                 </div>
             </div>
         </section>
     </main>
 </body>
+
 </html>
