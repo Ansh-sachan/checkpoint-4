@@ -960,6 +960,9 @@ a{
 		text-align: center;
 		margin: 0 0.5rem;
 	}
+	.foot-social-media:hover{
+	background-color: #f58c74;
+	}
 	.primary{
 		color: var(--primary);
 	}
