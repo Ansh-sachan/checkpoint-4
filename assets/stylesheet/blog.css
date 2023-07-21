@@ -219,7 +219,12 @@ a{
 .drop-down-2:hover .option-2{
 	display: block;
 }
-
+#toggle{
+	display: none;
+}
+.bars{
+	display:none;
+}
 
 /* bg-blog  */
 .bg-blog{
@@ -367,6 +372,7 @@ a{
 	border-radius: 1rem ;
 	margin-top: 1.7rem;
 	padding: 0.5rem;
+	border: 1px solid var(--primary);
 }
 .footer-btn{
 	padding:0.6rem 1.5rem;
@@ -406,3 +412,132 @@ a{
 #btn-top a{
 	color: white;
 }
+
+/* responsive */
+@media screen and (max-width:1200px){
+		html{
+			font-size: 14px;
+		}
+		.container{
+			max-width: 1000px;
+		}
+	}
+	@media screen and (max-width:1000px){
+		html{
+			font-size: 13px;
+		}
+		.container{
+			max-width: 900px;
+		}
+	}
+	@media screen and (max-width:900px){
+		html{
+			font-size: 12px;
+		}
+		.container{
+			max-width: 800px;
+		}
+		.footer-btn{
+			bottom: 4rem;
+			left: 11rem;
+		}
+	}
+	@media screen and (max-width:768px){
+		html{
+			font-size: 8px;
+		}
+		.container{
+			max-width: 500px;
+		}
+		.med-column{
+			flex-direction: column;
+		}
+		.flex-30{
+			flex: 0 1 45%;
+		}
+		/* navbar  */
+		.navbar{
+			width: 90%;
+		}
+		.nav{
+			display: none;
+			position:fixed;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			background-color: rgba(234, 84, 51, 0.9);
+			padding-left:50% ;
+			padding-top: 14rem;
+			z-index: 9;
+		}
+		.active{
+			color: white;
+			margin-left: 1.5rem;	
+		}
+		.nav-btn{
+			color: white;;
+		}
+		.drop-down{
+			margin-left:-1.5rem;
+		}
+		#toggle{
+			display: none;
+		}
+		.bars{
+			color: var(--primary);
+			padding: 0.5rem;	
+			display: block;
+			z-index: 99;
+			font-size: 1.3rem;
+		}
+		#toggle:checked~.bars{
+			color: white;
+		}
+		#toggle:checked~ .nav{
+			display: inline-block;
+		}
+		/* footer  */
+		.footer-btn{
+			bottom: 0.1rem;
+			left: 21rem;
+			padding: 1rem 1.5rem;
+		}
+		.margin-auto{
+			width: 50%;
+			margin: 0 auto;
+			padding-left:7rem ;
+			padding-top: 2rem;
+		}
+		.copy{
+			padding-top: 2rem;
+		}
+		.margin-auto{
+			padding-left: 13rem;
+		}
+	}
+	@media screen and (max-width:500px){
+		html{
+			font-size: 8px;
+		}
+		.container{
+			max-width: 300px;
+		}
+		.flex-30{
+			flex:0 1 98%;
+		}
+		.flex-20{
+			flex:0 1 98%;
+		}
+		.margin-auto{
+			padding-left: 1rem;
+		}
+		.footer-btn{
+			bottom: 0.1rem;
+			left: 21rem;
+			padding: 1rem 1.5rem;
+		}
+		.copy{
+			margin-top: 3rem;
+		}
+	}

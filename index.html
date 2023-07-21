@@ -18,8 +18,10 @@
             <nav>
                 <a class="brand" href="index.html">Flexor</a>
             </nav>
-            <nav>
-                <ul class="flex">
+            <label for="toggle" class="bars"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="toggle">
+            <nav class="nav">
+                <ul class="flex med-column med-center">
                     <li><a href="#btn-top" class="active">home</a></li>
                     <li><a href="#about-section" class="nav-btn">about</a></li>
                     <li><a href="#services" class="nav-btn">services</a></li>
@@ -29,7 +31,7 @@
                     <li><a href="blog.html" class="nav-btn">blog</a></li>
                     <li class="nav-btn">
                         <div class="drop-down">
-                            <a href="#" class="nav-btn">Drop Down <i class="fa-solid fa-chevron-down fa-bounce"></i></a>
+                            <a href="#" class="nav-btn">Drop Down <i class="fa-solid fa-chevron-down"></i></a>
                             <ul class="option">
                                 <li><a href="#">drop down 1</a></li>
                                 <li>
@@ -69,7 +71,7 @@
         </section>
         <section id="hero-section">
             <div class="container">
-                <div class="flex space-between container-box items-center">
+                <div class="flex space-between container-box items-center med-column wrap">
                     <div class="card-1 flex-30">
                         <h1 class="hero-head-1">
                             why choose flexor for your company websites
@@ -102,7 +104,7 @@
             </div>
         </section>
         <section id="about-section">
-            <div class="container flex">
+            <div class="container flex med-column">
                 <div class="flex-40 video">
                     <img src="assets/media/about-img.jpg" alt="error to laod" class="width-full">
                     <div>
@@ -157,6 +159,8 @@
             <div class="dot-container flex">
                 <div class="dot"></div>
                 <div class="dot1"></div>
+                <div class="dot1 display-none"></div>
+                <div class="dot1 display-none"></div>
             </div>
         </section>
         <section id="services">
@@ -167,8 +171,7 @@
                         aliquid fuga enim facilis necessitatibus inventore voluptates tenetur pariatur. Illo Lorem ipsum
                         dolor sit amet consectetur adipisicing..</p>
                 </div>
-                <div class="space-between">
-                    <div class="service-row flex">
+                <div class="space-between flex wrap space-between">
                         <div class="flex-30 service-box">
                             <div class="service-icon"><i class="fa-solid fa-tv"></i></div>
                             <h2 class="service-box-head">
@@ -196,8 +199,6 @@
                                 Officiis dolore error dicta, placeat repellendus quia vero fuga distinctio dolores vel.
                             </p>
                         </div>
-                    </div>
-                    <div class="service-row flex">
                         <div class="flex-30 service-box">
                             <div class="service-icon"><i class="fa-solid fa-image"></i>
                             </div>
@@ -226,13 +227,11 @@
                                 Officiis dolore error dicta, placeat repellendus quia vero fuga distinctio dolores vel.
                             </p>
                         </div>
-                    </div>
                 </div>
             </div>
         </section>
         <section id="section-7">
-            <div class="container">
-                <div class="flex">
+            <div class="container flex wrap space-between">
                     <div class="flex-48 box1-section7">
                         <div class="inner-box-section7">
                             <h2 class="box-head-section7">Our Mission</h2>
@@ -251,8 +250,6 @@
                                 </div>
                             </div>
                     </div>
-                </div>
-                    <div class="flex">
                         <div class="flex-48 box3-section7">
                             <div class="inner-box-section7">
                                 <h2 class="box-head-section7">Our Mission</h2>
@@ -271,7 +268,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </div>
         </section>
         <section id="bg-testimonial">
@@ -479,8 +475,8 @@
                         aliquid fuga enim facilis necessitatibus inventore voluptates tenetur pariatur. Illo Lorem ipsum
                         dolor sit amet consectetur adipisicing..</p>
                     </div>
-                    <div class="flex space-between wrap">
-                        <div class="price-box flex24">
+                    <div class="flex wrap space-between">
+                        <div class="price-box flex-15">
                             <h2 class="price-box-head">Free</h2>
                             <h3 class="price-box-head3"><span id="dollar">$</span><span id="price"> 0</span> / month</h3>
                             <h5 class="price-box-head5-avl">necessitatibus inventore</h5>
@@ -490,7 +486,7 @@
                             <h5 class="price-box-head5-not-avl"> Asperiores facere</h5>
                             <button class="price-btn">Buy Now</button>
                         </div>
-                        <div class="price-box flex-24">
+                        <div class="price-box flex-15">
                             <h2 class="price-box-head price-active">Buisness</h2>
                             <h3 class="price-box-head3"><span id="dollar">$</span><span id="price"> 19</span> / month</h3>
                             <h5 class="price-box-head5-avl">necessitatibus inventore</h5>
@@ -500,7 +496,7 @@
                             <h5 class="price-box-head5-not-avl"> Asperiores facere</h5>
                             <button class="price-btn">Buy Now</button>
                         </div>
-                        <div class="price-box flex24">
+                        <div class="price-box flex-15">
                             <h2 class="price-box-head">Developer</h2>
                             <h3 class="price-box-head3"><span id="dollar">$</span><span id="price"> 29</span> / month</h3>
                             <h5 class="price-box-head5-avl">necessitatibus inventore</h5>
@@ -510,7 +506,7 @@
                             <h5 class="price-box-head5-avl"> Asperiores facere</h5>
                             <button class="price-btn">Buy Now</button>
                         </div>
-                        <div class="price-box flex24">
+                        <div class="price-box flex-15">
                             <h2 class="price-box-head">Ultimate</h2>
                             <h3 class="price-box-head3"><span id="dollar">$</span><span id="price"> 49</span> / month</h3>
                             <h5 class="price-box-head5-avl">necessitatibus inventore</h5>
@@ -582,8 +578,8 @@
                         aliquid fuga enim facilis necessitatibus inventore voluptates tenetur pariatur. Illo Lorem ipsum
                         dolor sit amet consectetur adipisicing..</p>
                     </div>
-                    <div class="information flex space-between">
-                        <div class="info-box flex-27 flex space-between">
+                    <div class="information flex space-between med-column">
+                        <div class="info-box flex-27 flex">
                             <div class="info-box-icon"><i class="fa-solid fa-location-dot"></i></div>
                             <div class="box-info">
                                 <h4 class="info-box-head">
@@ -593,7 +589,7 @@
                                 <p class="info-box-para">New york,208059</p>
                             </div>
                         </div>
-                        <div class="info-box flex-27 flex space-between">
+                        <div class="info-box flex-27 flex">
                             <div class="info-box-icon"><i class="fa-solid fa-envelope"></i></div>
                             <div class="box-info">
                                 <h4 class="info-box-head">
@@ -603,7 +599,7 @@
                                 <p class="info-box-para">contact@example.com</p>
                             </div>
                         </div>
-                        <div class="info-box flex-27 flex space-between">
+                        <div class="info-box flex-27 flex">
                             <div class="info-box-icon"><i class="fa-solid fa-phone"></i></div>
                             <div class="box-info">
                                 <h4 class="info-box-head">
@@ -668,12 +664,12 @@
                     <div class="footer-btn">Subscribe</div>
                 </div>
             </div>
-            <div class="flex space-between">
+            <div class="flex space-between med-column center">
                 <div class="copy">
                     <p>&copy; Copyright <strong class="bold">Flexor</strong> All rights reserved</p>
                     <p>Designed by <span class="primary">BootstrapMade</span></p>
                 </div>
-                <div class="flex">
+                <div class="flex margin-auto">
                     <i class="fa-brands fa-square-facebook foot-social-media"></i>
                     <i class="fa-brands fa-square-twitter foot-social-media"></i>
                     <i class="fa-brands fa-linkedin foot-social-media"></i>
