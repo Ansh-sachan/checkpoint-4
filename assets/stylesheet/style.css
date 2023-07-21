@@ -1031,7 +1031,7 @@ a{
 		.med-column{
 			flex-direction: column;
 		}
-		.flex-30{
+		.flex-24{
 			flex: 0 1 37%;
 		}
 		.flex-27, .flex-20{
@@ -1152,7 +1152,7 @@ a{
 			width: 11rem;
 			padding-left:6rem ;
 		}
-		.flex-30, .flex-48{
+		.flex-24, .flex-45{
 			flex: 0 1 95%;
 		}
 		.flex-27, .flex-20, .flex-15{
