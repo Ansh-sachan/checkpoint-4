@@ -114,8 +114,14 @@ a{
 .flex-30{
 	flex: 0 1 30%;
 }
+.flex-24{
+	flex: 0 1 24%;
+}
 .flex-40{
 	flex: 0 1 40%;
+}
+.flex-45{
+	flex: 0 1 45%;
 }
 .flex-48{
 	flex: 0 1 48%;
